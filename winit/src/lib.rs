@@ -1376,6 +1376,17 @@ fn run_action<P, C>(
                     f(handle);
                 }
             }
+            window::Action::RunWithWindowHandles(id, f) => {
+                use winit::raw_window_handle::HasDisplayHandle;
+                use winit::raw_window_handle::HasWindowHandle;
+
+                if let Some(window) = window_manager.get_mut(id) {
+                    f(window::WindowHandles::new(
+                        window.raw.window_handle().unwrap(),
+                        window.raw.display_handle().unwrap(),
+                    ));
+                }
+            }
             window::Action::Screenshot(id, channel) => {
                 if let Some(window) = window_manager.get_mut(id) {
                     if let Some(compositor) = compositor {

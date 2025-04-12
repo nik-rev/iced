@@ -408,7 +408,10 @@ mod geometry {
         type Geometry = Geometry<A::Geometry, B::Geometry>;
         type Frame = Frame<A::Frame, B::Frame>;
 
-        fn new_frame(&self, size: iced_graphics::core::Size) -> Self::Frame {
+        fn new_frame(
+            &self,
+            size: ferrishot_iced_graphics::core::Size,
+        ) -> Self::Frame {
             match self {
                 Self::Primary(renderer) => {
                     Frame::Primary(renderer.new_frame(size))

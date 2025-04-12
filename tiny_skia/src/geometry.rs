@@ -345,7 +345,7 @@ fn transform_rectangle(
 }
 
 fn convert_path(path: &Path) -> Option<tiny_skia::Path> {
-    use iced_graphics::geometry::path::lyon_path;
+    use ferrishot_iced_graphics::geometry::path::lyon_path;
 
     let mut builder = tiny_skia::PathBuilder::new();
     let mut last_point = lyon_path::math::Point::default();

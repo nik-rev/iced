@@ -3,7 +3,7 @@
 //! [`Path`]: super::Path
 pub use crate::geometry::Style;
 
-use iced_core::Color;
+use ferrishot_iced_core::Color;
 
 /// The style of a stroke.
 #[derive(Debug, Clone, Copy)]

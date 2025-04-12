@@ -1,5 +1,5 @@
 [package]
-name = "iced_highlighter"
+name = "ferrishot_iced_highlighter"
 description = "A syntax highlighter for iced"
 version.workspace = true
 authors.workspace = true
@@ -14,6 +14,6 @@ keywords.workspace = true
 workspace = true
 
 [dependencies]
-iced_core.workspace = true
+ferrishot_iced_core.workspace = true
 
 syntect.workspace = true

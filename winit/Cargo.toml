@@ -1,5 +1,5 @@
 [package]
-name = "iced_winit"
+name = "ferrishot_iced_winit"
 description = "A runtime for iced on top of winit"
 version.workspace = true
 edition.workspace = true
@@ -15,7 +15,7 @@ workspace = true
 
 [features]
 default = ["x11", "wayland", "wayland-dlopen", "wayland-csd-adwaita"]
-debug = ["iced_debug/enable"]
+debug = ["ferrishot_iced_debug/enable"]
 system = ["sysinfo"]
 program = []
 x11 = ["winit/x11"]
@@ -25,8 +25,8 @@ wayland-csd-adwaita = ["winit/wayland-csd-adwaita"]
 unconditional-rendering = []
 
 [dependencies]
-iced_debug.workspace = true
-iced_program.workspace = true
+ferrishot_iced_debug.workspace = true
+ferrishot_iced_program.workspace = true
 
 log.workspace = true
 rustc-hash.workspace = true

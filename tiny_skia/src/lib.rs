@@ -17,9 +17,9 @@ mod vector;
 #[cfg(feature = "geometry")]
 pub mod geometry;
 
-use iced_debug as debug;
-pub use iced_graphics as graphics;
-pub use iced_graphics::core;
+use ferrishot_iced_debug as debug;
+pub use ferrishot_iced_graphics as graphics;
+pub use ferrishot_iced_graphics::core;
 
 pub use layer::Layer;
 pub use primitive::Primitive;

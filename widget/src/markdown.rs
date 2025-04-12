@@ -7,11 +7,11 @@
 //!
 //! # Example
 //! ```no_run
-//! # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+//! # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 //! # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 //! #
-//! use iced::widget::markdown;
-//! use iced::Theme;
+//! use ferrishot_iced::widget::markdown;
+//! use ferrishot_iced::Theme;
 //!
 //! struct State {
 //!    markdown: Vec<markdown::Item>,
@@ -318,11 +318,11 @@ impl Span {
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::markdown;
-/// use iced::Theme;
+/// use ferrishot_iced::widget::markdown;
+/// use ferrishot_iced::Theme;
 ///
 /// struct State {
 ///    markdown: Vec<markdown::Item>,
@@ -963,11 +963,11 @@ impl From<Theme> for Style {
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::markdown;
-/// use iced::Theme;
+/// use ferrishot_iced::widget::markdown;
+/// use ferrishot_iced::Theme;
 ///
 /// struct State {
 ///    markdown: Vec<markdown::Item>,

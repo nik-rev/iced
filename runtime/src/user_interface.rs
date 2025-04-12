@@ -54,7 +54,7 @@ where
     /// #
     /// # impl Counter {
     /// #     pub fn new() -> Self { Counter }
-    /// #     pub fn view(&self) -> iced_core::Element<(), (), Renderer> { unimplemented!() }
+    /// #     pub fn view(&self) -> ferrishot_iced_core::Element<(), (), Renderer> { unimplemented!() }
     /// #     pub fn update(&mut self, _: ()) {}
     /// # }
     /// use iced_runtime::core::Size;
@@ -130,7 +130,7 @@ where
     /// #
     /// # impl Counter {
     /// #     pub fn new() -> Self { Counter }
-    /// #     pub fn view(&self) -> iced_core::Element<(), (), Renderer> { unimplemented!() }
+    /// #     pub fn view(&self) -> ferrishot_iced_core::Element<(), (), Renderer> { unimplemented!() }
     /// #     pub fn update(&mut self, _: ()) {}
     /// # }
     /// use iced_runtime::core::clipboard;

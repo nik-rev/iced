@@ -59,6 +59,8 @@ pub use color::Color;
 pub use content_fit::ContentFit;
 pub use element::Element;
 pub use event::Event;
+pub use renderer::Renderer;
+pub use widget::Widget;
 pub use font::Font;
 pub use gradient::Gradient;
 pub use image::Image;
@@ -70,7 +72,6 @@ pub use padding::Padding;
 pub use pixels::Pixels;
 pub use point::Point;
 pub use rectangle::Rectangle;
-pub use renderer::Renderer;
 pub use rotation::Rotation;
 pub use settings::Settings;
 pub use shadow::Shadow;
@@ -81,7 +82,6 @@ pub use text::Text;
 pub use theme::Theme;
 pub use transformation::Transformation;
 pub use vector::Vector;
-pub use widget::Widget;
 
 pub use smol_str::SmolStr;
 
@@ -125,7 +125,7 @@ pub trait Function<A, B, O> {
     /// That's quite a mouthful. [`with`](Self::with) lets you write:
     ///
     /// ```rust
-    /// # use iced_core::Function;
+    /// # use ferrishot_iced_core::Function;
     /// # let element: Option<()> = Some(());
     /// # enum Message { ButtonPressed(u32, ()) }
     /// let id = 123;

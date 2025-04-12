@@ -45,7 +45,7 @@ impl Status {
     /// `Captured` takes precedence over `Ignored`:
     ///
     /// ```
-    /// use iced_core::event::Status;
+    /// use ferrishot_iced_core::event::Status;
     ///
     /// assert_eq!(Status::Ignored.merge(Status::Ignored), Status::Ignored);
     /// assert_eq!(Status::Ignored.merge(Status::Captured), Status::Captured);

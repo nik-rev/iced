@@ -10,4 +10,4 @@ pub use crate::core::time::*;
         target_arch = "wasm32"
     )))
 )]
-pub use iced_futures::backend::default::time::*;
+pub use ferrishot_iced_futures::backend::default::time::*;

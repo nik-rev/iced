@@ -84,8 +84,8 @@ pub enum Purpose {
 impl InputMethod {
     /// Merges two [`InputMethod`] strategies, prioritizing the first one when both open:
     /// ```
-    /// # use iced_core::input_method::{InputMethod, Purpose, Preedit};
-    /// # use iced_core::Point;
+    /// # use ferrishot_iced_core::input_method::{InputMethod, Purpose, Preedit};
+    /// # use ferrishot_iced_core::Point;
     ///
     /// let open = InputMethod::Enabled {
     ///     position: Point::ORIGIN,

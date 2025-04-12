@@ -1,5 +1,5 @@
 //! Store images.
-use iced_core::Size;
+use ferrishot_iced_core::Size;
 
 use std::fmt::Debug;
 

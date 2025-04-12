@@ -1,5 +1,5 @@
 [package]
-name = "iced_beacon"
+name = "ferrishot_iced_beacon"
 description = "A client/server protocol to monitor and supervise iced applications"
 version.workspace = true
 edition.workspace = true
@@ -11,8 +11,8 @@ categories.workspace = true
 keywords.workspace = true
 
 [dependencies]
-iced_core.workspace = true
-iced_core.features = ["serde"]
+ferrishot_iced_core.workspace = true
+ferrishot_iced_core.features = ["serde"]
 
 bincode.workspace = true
 futures.workspace = true

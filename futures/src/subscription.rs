@@ -90,14 +90,14 @@ pub type Hasher = rustc_hash::FxHasher;
 /// ```
 /// # mod iced {
 /// #     pub mod time {
-/// #         pub use iced_futures::backend::default::time::every;
+/// #         pub use ferrishot_iced_futures::backend::default::time::every;
 /// #         pub use std::time::{Duration, Instant};
 /// #     }
 /// #
-/// #     pub use iced_futures::Subscription;
+/// #     pub use ferrishot_iced_futures::Subscription;
 /// # }
-/// use iced::time::{self, Duration, Instant};
-/// use iced::Subscription;
+/// use ferrishot_iced::time::{self, Duration, Instant};
+/// use ferrishot_iced::Subscription;
 ///
 /// struct State {
 ///     timer_enabled: bool,
@@ -139,15 +139,15 @@ impl<T> Subscription<T> {
     ///
     /// ```
     /// # mod iced {
-    /// #     pub use iced_futures::Subscription;   
-    /// #     pub use iced_futures::futures;
-    /// #     pub use iced_futures::stream;
+    /// #     pub use ferrishot_iced_futures::Subscription;   
+    /// #     pub use ferrishot_iced_futures::futures;
+    /// #     pub use ferrishot_iced_futures::stream;
     /// # }
-    /// use iced::futures::channel::mpsc;
-    /// use iced::futures::sink::SinkExt;
-    /// use iced::futures::Stream;
-    /// use iced::stream;
-    /// use iced::Subscription;
+    /// use ferrishot_iced::futures::channel::mpsc;
+    /// use ferrishot_iced::futures::sink::SinkExt;
+    /// use ferrishot_iced::futures::Stream;
+    /// use ferrishot_iced::stream;
+    /// use ferrishot_iced::Subscription;
     ///
     /// pub enum Event {
     ///     Ready(mpsc::Sender<Input>),

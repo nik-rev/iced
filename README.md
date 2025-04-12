@@ -97,7 +97,7 @@ Now, let's show the actual counter by putting it all together in our
 __view logic__:
 
 ```rust
-use iced::widget::{button, column, text, Column};
+use ferrishot_iced::widget::{button, column, text, Column};
 
 impl Counter {
     pub fn view(&self) -> Column<Message> {
@@ -141,8 +141,8 @@ impl Counter {
 And that's everything! We just wrote a whole user interface. Let's run it:
 
 ```rust
-fn main() -> iced::Result {
-    iced::run("A cool counter", Counter::update, Counter::view)
+fn main() -> ferrishot_iced::Result {
+    ferrishot_iced::run("A cool counter", Counter::update, Counter::view)
 }
 ```
 

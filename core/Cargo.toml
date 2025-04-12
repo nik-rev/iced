@@ -1,5 +1,5 @@
 [package]
-name = "iced_core"
+name = "ferrishot_iced_core"
 description = "The essential ideas of iced"
 version.workspace = true
 edition.workspace = true

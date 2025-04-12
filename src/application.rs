@@ -2,11 +2,11 @@
 //!
 //! # Example
 //! ```no_run,standalone_crate
-//! use iced::widget::{button, column, text, Column};
-//! use iced::Theme;
+//! use ferrishot_iced::widget::{button, column, text, Column};
+//! use ferrishot_iced::Theme;
 //!
-//! pub fn main() -> iced::Result {
-//!     iced::application(u64::default, update, view)
+//! pub fn main() -> ferrishot_iced::Result {
+//!     ferrishot_iced::application(u64::default, update, view)
 //!         .theme(|_| Theme::Dark)
 //!         .centered()
 //!         .run()
@@ -44,10 +44,10 @@ use std::borrow::Cow;
 ///
 /// # Example
 /// ```no_run,standalone_crate
-/// use iced::widget::{button, column, text, Column};
+/// use ferrishot_iced::widget::{button, column, text, Column};
 ///
-/// pub fn main() -> iced::Result {
-///     iced::application(u64::default, update, view).run()
+/// pub fn main() -> ferrishot_iced::Result {
+///     ferrishot_iced::application(u64::default, update, view).run()
 /// }
 ///
 /// #[derive(Debug, Clone)]
@@ -105,7 +105,7 @@ where
         type Message = Message;
         type Theme = Theme;
         type Renderer = Renderer;
-        type Executor = iced_futures::backend::default::Executor;
+        type Executor = ferrishot_iced_futures::backend::default::Executor;
 
         fn name() -> &'static str {
             let name = std::any::type_name::<State>();

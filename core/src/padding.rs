@@ -6,7 +6,7 @@ use crate::{Pixels, Size};
 /// You can leverage the `From` trait to build [`Padding`] conveniently:
 ///
 /// ```
-/// # use iced_core::Padding;
+/// # use ferrishot_iced_core::Padding;
 /// #
 /// let padding = Padding::from(20);              // 20px on all sides
 /// let padding = Padding::from([10, 20]);        // top/bottom, left/right
@@ -16,7 +16,7 @@ use crate::{Pixels, Size};
 /// so you can easily write:
 ///
 /// ```
-/// # use iced_core::Padding;
+/// # use ferrishot_iced_core::Padding;
 /// #
 /// # struct Widget;
 /// #

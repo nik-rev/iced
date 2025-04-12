@@ -1,15 +1,15 @@
 //! The official renderer for iced.
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 #[cfg(feature = "wgpu")]
-pub use iced_wgpu as wgpu;
+pub use ferrishot_iced_wgpu as wgpu;
 
 pub mod fallback;
 
-pub use iced_graphics as graphics;
-pub use iced_graphics::core;
+pub use ferrishot_iced_graphics as graphics;
+pub use ferrishot_iced_graphics::core;
 
 #[cfg(feature = "geometry")]
-pub use iced_graphics::geometry;
+pub use ferrishot_iced_graphics::geometry;
 
 /// The default graphics renderer for [`iced`].
 ///
@@ -24,13 +24,13 @@ pub type Compositor = renderer::Compositor;
 #[cfg(all(feature = "wgpu", feature = "tiny-skia"))]
 mod renderer {
     pub type Renderer = crate::fallback::Renderer<
-        iced_wgpu::Renderer,
-        iced_tiny_skia::Renderer,
+        ferrishot_iced_wgpu::Renderer,
+        ferrishot_iced_tiny_skia::Renderer,
     >;
 
     pub type Compositor = crate::fallback::Compositor<
-        iced_wgpu::window::Compositor,
-        iced_tiny_skia::window::Compositor,
+        ferrishot_iced_wgpu::window::Compositor,
+        ferrishot_iced_tiny_skia::window::Compositor,
     >;
 }
 

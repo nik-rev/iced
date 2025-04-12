@@ -1,10 +1,10 @@
 #![allow(missing_docs)]
 use criterion::{Bencher, Criterion, criterion_group, criterion_main};
 
-use iced::alignment;
-use iced::mouse;
-use iced::widget::{canvas, scrollable, stack, text};
-use iced::{
+use ferrishot_iced::alignment;
+use ferrishot_iced::mouse;
+use ferrishot_iced::widget::{canvas, scrollable, stack, text};
+use ferrishot_iced::{
     Color, Element, Font, Length, Pixels, Point, Rectangle, Size, Theme,
 };
 use iced_wgpu::Renderer;

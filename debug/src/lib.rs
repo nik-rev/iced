@@ -1,4 +1,4 @@
-pub use iced_core as core;
+pub use ferrishot_iced_core as core;
 
 use crate::core::theme;
 use crate::core::window;

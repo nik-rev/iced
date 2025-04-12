@@ -93,8 +93,8 @@ impl<'a, Message, Theme, Renderer> Element<'a, Message, Theme, Renderer> {
     ///
     /// ```no_run
     /// # mod iced {
-    /// #     pub use iced_core::Function;
-    /// #     pub type Element<'a, Message> = iced_core::Element<'a, Message, iced_core::Theme, ()>;
+    /// #     pub use ferrishot_iced_core::Function;
+    /// #     pub type Element<'a, Message> = ferrishot_iced_core::Element<'a, Message, ferrishot_iced_core::Theme, ()>;
     /// #
     /// #     pub mod widget {
     /// #         pub fn row<'a, Message>(iter: impl IntoIterator<Item = super::Element<'a, Message>>) -> super::Element<'a, Message> {
@@ -108,7 +108,7 @@ impl<'a, Message, Theme, Renderer> Element<'a, Message, Theme, Renderer> {
     /// #     pub enum Message {}
     /// #     pub struct Counter;
     /// #
-    /// #     pub type Element<'a, Message> = iced_core::Element<'a, Message, iced_core::Theme, ()>;
+    /// #     pub type Element<'a, Message> = ferrishot_iced_core::Element<'a, Message, ferrishot_iced_core::Theme, ()>;
     /// #
     /// #     impl Counter {
     /// #         pub fn view(&self) -> Element<Message> {
@@ -119,8 +119,8 @@ impl<'a, Message, Theme, Renderer> Element<'a, Message, Theme, Renderer> {
     /// #
     /// use counter::Counter;
     ///
-    /// use iced::widget::row;
-    /// use iced::{Element, Function};
+    /// use ferrishot_iced::widget::row;
+    /// use ferrishot_iced::{Element, Function};
     ///
     /// struct ManyCounters {
     ///     counters: Vec<Counter>,

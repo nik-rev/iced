@@ -2,11 +2,11 @@
 //!
 //! # Example
 //! ```no_run
-//! # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::core::Length::Fill; }
+//! # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::core::Length::Fill; }
 //! # pub type State = ();
 //! # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-//! use iced::widget::pin;
-//! use iced::Fill;
+//! use ferrishot_iced::widget::pin;
+//! use ferrishot_iced::Fill;
 //!
 //! enum Message {
 //!     // ...
@@ -35,11 +35,11 @@ use crate::core::{
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::core::Length::Fill; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::core::Length::Fill; }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::pin;
-/// use iced::Fill;
+/// use ferrishot_iced::widget::pin;
+/// use ferrishot_iced::Fill;
 ///
 /// enum Message {
 ///     // ...

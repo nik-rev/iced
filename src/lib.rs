@@ -30,11 +30,11 @@
 //! Start by calling [`run`]:
 //!
 //! ```no_run,standalone_crate
-//! pub fn main() -> iced::Result {
-//!     iced::run(update, view)
+//! pub fn main() -> ferrishot_iced::Result {
+//!     ferrishot_iced::run(update, view)
 //! }
 //! # fn update(state: &mut (), message: ()) {}
-//! # fn view(state: &()) -> iced::Element<()> { iced::widget::text("").into() }
+//! # fn view(state: &()) -> ferrishot_iced::Element<()> { ferrishot_iced::widget::text("").into() }
 //! ```
 //!
 //! Define an `update` function to __change__ your state:
@@ -52,8 +52,8 @@
 //! Define a `view` function to __display__ your state:
 //!
 //! ```standalone_crate
-//! use iced::widget::{button, text};
-//! use iced::Element;
+//! use ferrishot_iced::widget::{button, text};
+//! use ferrishot_iced::Element;
 //!
 //! fn view(counter: &u64) -> Element<Message> {
 //!     button(text(counter)).on_press(Message::Increment).into()
@@ -87,8 +87,8 @@
 //! # struct Counter { value: u64 }
 //! # #[derive(Clone)]
 //! # enum Message { Increment }
-//! # use iced::widget::{button, text};
-//! # use iced::Element;
+//! # use ferrishot_iced::widget::{button, text};
+//! # use ferrishot_iced::Element;
 //! fn update(counter: &mut Counter, message: Message) {
 //!     match message {
 //!         Message::Increment => counter.value += 1,
@@ -112,8 +112,8 @@
 //! # struct Counter { value: u64 }
 //! # #[derive(Clone)]
 //! # enum Message { Increment }
-//! use iced::widget::{button, column, text};
-//! use iced::Element;
+//! use ferrishot_iced::widget::{button, column, text};
+//! use ferrishot_iced::Element;
 //!
 //! fn view(counter: &Counter) -> Element<Message> {
 //!     column![
@@ -141,8 +141,8 @@
 //! ```standalone_crate
 //! # struct State;
 //! # enum Message {}
-//! use iced::widget::{column, container, row};
-//! use iced::{Fill, Element};
+//! use ferrishot_iced::widget::{column, container, row};
+//! use ferrishot_iced::{Fill, Element};
 //!
 //! fn view(state: &State) -> Element<Message> {
 //!     container(
@@ -184,8 +184,8 @@
 //! ```standalone_crate
 //! # struct State;
 //! # enum Message {}
-//! use iced::widget::container;
-//! use iced::Element;
+//! use ferrishot_iced::widget::container;
+//! use ferrishot_iced::Element;
 //!
 //! fn view(state: &State) -> Element<Message> {
 //!     container("I am 300px tall!").height(300).into()
@@ -199,10 +199,10 @@
 //!
 //! ```no_run,standalone_crate
 //! # struct State;
-//! use iced::Theme;
+//! use ferrishot_iced::Theme;
 //!
-//! pub fn main() -> iced::Result {
-//!     iced::application(new, update, view)
+//! pub fn main() -> ferrishot_iced::Result {
+//!     ferrishot_iced::application(new, update, view)
 //!         .theme(theme)
 //!         .run()
 //! }
@@ -216,7 +216,7 @@
 //!     Theme::TokyoNight
 //! }
 //! # fn update(state: &mut State, message: ()) {}
-//! # fn view(state: &State) -> iced::Element<()> { iced::widget::text("").into() }
+//! # fn view(state: &State) -> ferrishot_iced::Element<()> { ferrishot_iced::widget::text("").into() }
 //! ```
 //!
 //! The `theme` function takes the current state of the application, allowing the
@@ -234,8 +234,8 @@
 //! ```standalone_crate
 //! # struct State;
 //! # enum Message {}
-//! use iced::widget::container;
-//! use iced::Element;
+//! use ferrishot_iced::widget::container;
+//! use ferrishot_iced::Element;
 //!
 //! fn view(state: &State) -> Element<Message> {
 //!     container("I am a rounded box!").style(container::rounded_box).into()
@@ -249,8 +249,8 @@
 //! # struct State;
 //! # #[derive(Clone)]
 //! # enum Message {}
-//! use iced::widget::button;
-//! use iced::{Element, Theme};
+//! use ferrishot_iced::widget::button;
+//! use ferrishot_iced::{Element, Theme};
 //!
 //! fn view(state: &State) -> Element<Message> {
 //!     button("I am a styled button!").style(|theme: &Theme, status| {
@@ -293,7 +293,7 @@
 //! ```standalone_crate
 //! # #[derive(Clone)]
 //! # struct Weather;
-//! use iced::Task;
+//! use ferrishot_iced::Task;
 //!
 //! struct State {
 //!     weather: Option<Weather>,
@@ -340,16 +340,16 @@
 //!
 //! ```no_run,standalone_crate
 //! # struct State;
-//! use iced::window;
-//! use iced::{Size, Subscription};
+//! use ferrishot_iced::window;
+//! use ferrishot_iced::{Size, Subscription};
 //!
 //! #[derive(Debug)]
 //! enum Message {
 //!     WindowResized(Size),
 //! }
 //!
-//! pub fn main() -> iced::Result {
-//!     iced::application(new, update, view)
+//! pub fn main() -> ferrishot_iced::Result {
+//!     ferrishot_iced::application(new, update, view)
 //!         .subscription(subscription)
 //!         .run()
 //! }
@@ -359,7 +359,7 @@
 //! }
 //! # fn new() -> State { State }
 //! # fn update(state: &mut State, message: Message) {}
-//! # fn view(state: &State) -> iced::Element<Message> { iced::widget::text("").into() }
+//! # fn view(state: &State) -> ferrishot_iced::Element<Message> { ferrishot_iced::widget::text("").into() }
 //! ```
 //!
 //! A [`Subscription`] is [a _declarative_ builder of streams](Subscription#the-lifetime-of-a-subscription)
@@ -381,7 +381,7 @@
 //!
 //! ```standalone_crate
 //! # mod contacts {
-//! #     use iced::{Element, Task};
+//! #     use ferrishot_iced::{Element, Task};
 //! #     pub struct Contacts;
 //! #     impl Contacts {
 //! #         pub fn update(&mut self, message: Message) -> Action { unimplemented!() }
@@ -392,7 +392,7 @@
 //! #     pub enum Action { None, Run(Task<Message>), Chat(()) }
 //! # }
 //! # mod conversation {
-//! #     use iced::{Element, Task};
+//! #     use ferrishot_iced::{Element, Task};
 //! #     pub struct Conversation;
 //! #     impl Conversation {
 //! #         pub fn new(contact: ()) -> (Self, Task<Message>) { unimplemented!() }
@@ -405,7 +405,7 @@
 //! use contacts::Contacts;
 //! use conversation::Conversation;
 //!
-//! use iced::{Element, Task};
+//! use ferrishot_iced::{Element, Task};
 //!
 //! struct State {
 //!     screen: Screen,
@@ -475,15 +475,15 @@
 )]
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 #![cfg_attr(docsrs, feature(doc_cfg))]
-use iced_widget::graphics;
-use iced_widget::renderer;
-use iced_winit as shell;
-use iced_winit::core;
-use iced_winit::program;
-use iced_winit::runtime;
+use ferrishot_iced_widget::graphics;
+use ferrishot_iced_widget::renderer;
+use ferrishot_iced_winit as shell;
+use ferrishot_iced_winit::core;
+use ferrishot_iced_winit::program;
+use ferrishot_iced_winit::runtime;
 
-pub use iced_futures::futures;
-pub use iced_futures::stream;
+pub use ferrishot_iced_futures::futures;
+pub use ferrishot_iced_futures::stream;
 
 #[cfg(not(any(
     target_arch = "wasm32",
@@ -498,10 +498,10 @@ compile_error!(
 );
 
 #[cfg(feature = "highlighter")]
-pub use iced_highlighter as highlighter;
+pub use ferrishot_iced_highlighter as highlighter;
 
 #[cfg(feature = "wgpu")]
-pub use iced_renderer::wgpu::wgpu;
+pub use ferrishot_iced_renderer::wgpu::wgpu;
 
 mod error;
 
@@ -526,7 +526,7 @@ pub use crate::core::{
     Rotation, Settings, Shadow, Size, Theme, Transformation, Vector, never,
 };
 pub use crate::runtime::exit;
-pub use iced_futures::Subscription;
+pub use ferrishot_iced_futures::Subscription;
 
 pub use Alignment::Center;
 pub use Length::{Fill, FillPortion, Shrink};
@@ -550,8 +550,8 @@ pub mod clipboard {
 
 pub mod executor {
     //! Choose your preferred executor to power your application.
-    pub use iced_futures::Executor;
-    pub use iced_futures::backend::default::Executor as Default;
+    pub use ferrishot_iced_futures::Executor;
+    pub use ferrishot_iced_futures::backend::default::Executor as Default;
 }
 
 pub mod font {
@@ -563,7 +563,7 @@ pub mod font {
 pub mod event {
     //! Handle events of a user interface.
     pub use crate::core::event::{Event, Status};
-    pub use iced_futures::event::{
+    pub use ferrishot_iced_futures::event::{
         listen, listen_raw, listen_url, listen_with,
     };
 }
@@ -572,7 +572,7 @@ pub mod keyboard {
     //! Listen and react to keyboard events.
     pub use crate::core::keyboard::key;
     pub use crate::core::keyboard::{Event, Key, Location, Modifiers};
-    pub use iced_futures::keyboard::{on_key_press, on_key_release};
+    pub use ferrishot_iced_futures::keyboard::{on_key_press, on_key_release};
 }
 
 pub mod mouse {
@@ -604,7 +604,7 @@ pub mod overlay {
         Renderer = crate::Renderer,
     > = crate::core::overlay::Element<'a, Message, Theme, Renderer>;
 
-    pub use iced_widget::overlay::*;
+    pub use ferrishot_iced_widget::overlay::*;
 }
 
 pub mod touch {
@@ -615,7 +615,7 @@ pub mod touch {
 #[allow(hidden_glob_reexports)]
 pub mod widget {
     //! Use the built-in widgets or create your own.
-    pub use iced_widget::*;
+    pub use ferrishot_iced_widget::*;
 
     // We hide the re-exported modules by `iced_widget`
     mod core {}
@@ -661,10 +661,10 @@ pub type Result = std::result::Result<(), Error>;
 ///
 /// # Example
 /// ```no_run,standalone_crate
-/// use iced::widget::{button, column, text, Column};
+/// use ferrishot_iced::widget::{button, column, text, Column};
 ///
-/// pub fn main() -> iced::Result {
-///     iced::run(update, view)
+/// pub fn main() -> ferrishot_iced::Result {
+///     ferrishot_iced::run(update, view)
 /// }
 ///
 /// #[derive(Debug, Clone)]

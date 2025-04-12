@@ -35,10 +35,10 @@ use std::ops::RangeInclusive;
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::{button, column};
+/// use ferrishot_iced::widget::{button, column};
 ///
 /// #[derive(Debug, Clone)]
 /// enum Message {
@@ -69,10 +69,10 @@ macro_rules! column {
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::{button, row};
+/// use ferrishot_iced::widget::{button, row};
 ///
 /// #[derive(Debug, Clone)]
 /// enum Message {
@@ -132,7 +132,7 @@ macro_rules! stack {
 /// # }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::core::Theme, ()>;
-/// use iced::widget::text;
+/// use ferrishot_iced::widget::text;
 ///
 /// enum Message {
 ///     // ...
@@ -162,12 +162,12 @@ macro_rules! text {
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::core::*; }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::font;
-/// use iced::widget::{rich_text, span};
-/// use iced::{color, never, Font};
+/// use ferrishot_iced::font;
+/// use ferrishot_iced::widget::{rich_text, span};
+/// use ferrishot_iced::{color, never, Font};
 ///
 /// #[derive(Debug, Clone)]
 /// enum Message {
@@ -201,10 +201,10 @@ macro_rules! rich_text {
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::container;
+/// use ferrishot_iced::widget::container;
 ///
 /// enum Message {
 ///     // ...
@@ -416,11 +416,11 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::core::Length::Fill; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::core::Length::Fill; }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::pin;
-/// use iced::Fill;
+/// use ferrishot_iced::widget::pin;
+/// use ferrishot_iced::Fill;
 ///
 /// enum Message {
 ///     // ...
@@ -448,10 +448,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::{column, text};
+/// use ferrishot_iced::widget::{column, text};
 ///
 /// enum Message {
 ///     // ...
@@ -476,10 +476,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::{keyed_column, text};
+/// use ferrishot_iced::widget::{keyed_column, text};
 ///
 /// enum Message {
 ///     // ...
@@ -507,10 +507,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::{row, text};
+/// use ferrishot_iced::widget::{row, text};
 ///
 /// enum Message {
 ///     // ...
@@ -1003,10 +1003,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::{column, scrollable, vertical_space};
+/// use ferrishot_iced::widget::{column, scrollable, vertical_space};
 ///
 /// enum Message {
 ///     // ...
@@ -1034,10 +1034,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::button;
+/// use ferrishot_iced::widget::button;
 ///
 /// #[derive(Clone)]
 /// enum Message {
@@ -1065,10 +1065,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::{container, tooltip};
+/// use ferrishot_iced::widget::{container, tooltip};
 ///
 /// enum Message {
 ///     // ...
@@ -1100,11 +1100,11 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::core::Theme, ()>;
-/// use iced::widget::text;
-/// use iced::color;
+/// use ferrishot_iced::widget::text;
+/// use ferrishot_iced::color;
 ///
 /// enum Message {
 ///     // ...
@@ -1144,12 +1144,12 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::core::*; }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::font;
-/// use iced::widget::{rich_text, span};
-/// use iced::{color, never, Font};
+/// use ferrishot_iced::font;
+/// use ferrishot_iced::widget::{rich_text, span};
+/// use ferrishot_iced::{color, never, Font};
 ///
 /// #[derive(Debug, Clone)]
 /// enum Message {
@@ -1189,12 +1189,12 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::core::*; }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::font;
-/// use iced::widget::{rich_text, span};
-/// use iced::{color, never, Font};
+/// use ferrishot_iced::font;
+/// use ferrishot_iced::widget::{rich_text, span};
+/// use ferrishot_iced::{color, never, Font};
 ///
 /// #[derive(Debug, Clone)]
 /// enum Message {
@@ -1226,10 +1226,10 @@ pub use crate::markdown::view as markdown;
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::checkbox;
+/// use ferrishot_iced::widget::checkbox;
 ///
 /// struct State {
 ///    is_checked: bool,
@@ -1271,10 +1271,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::{column, radio};
+/// use ferrishot_iced::widget::{column, radio};
 ///
 /// struct State {
 ///    selection: Option<Choice>,
@@ -1346,10 +1346,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::toggler;
+/// use ferrishot_iced::widget::toggler;
 ///
 /// struct State {
 ///    is_checked: bool,
@@ -1390,10 +1390,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::text_input;
+/// use ferrishot_iced::widget::text_input;
 ///
 /// struct State {
 ///    content: String,
@@ -1436,10 +1436,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::text_editor;
+/// use ferrishot_iced::widget::text_editor;
 ///
 /// struct State {
 ///    content: text_editor::Content,
@@ -1482,10 +1482,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::slider;
+/// use ferrishot_iced::widget::slider;
 ///
 /// struct State {
 ///    value: f32,
@@ -1527,10 +1527,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::vertical_slider;
+/// use ferrishot_iced::widget::vertical_slider;
 ///
 /// struct State {
 ///    value: f32,
@@ -1572,10 +1572,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::pick_list;
+/// use ferrishot_iced::widget::pick_list;
 ///
 /// struct State {
 ///    favorite: Option<Fruit>,
@@ -1652,10 +1652,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::combo_box;
+/// use ferrishot_iced::widget::combo_box;
 ///
 /// struct State {
 ///    fruits: combo_box::State<Fruit>,
@@ -1738,10 +1738,10 @@ pub fn vertical_space() -> Space {
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::horizontal_rule;
+/// use ferrishot_iced::widget::horizontal_rule;
 ///
 /// #[derive(Clone)]
 /// enum Message {
@@ -1763,10 +1763,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::vertical_rule;
+/// use ferrishot_iced::widget::vertical_rule;
 ///
 /// #[derive(Clone)]
 /// enum Message {
@@ -1794,10 +1794,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::progress_bar;
+/// use ferrishot_iced::widget::progress_bar;
 ///
 /// struct State {
 ///    progress: f32,
@@ -1829,10 +1829,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::image;
+/// use ferrishot_iced::widget::image;
 ///
 /// enum Message {
 ///     // ...
@@ -1857,10 +1857,10 @@ pub fn image<Handle>(handle: impl Into<Handle>) -> crate::Image<Handle> {
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::svg;
+/// use ferrishot_iced::widget::svg;
 ///
 /// enum Message {
 ///     // ...
@@ -1923,13 +1923,13 @@ where
 ///
 /// # Example: Drawing a Simple Circle
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::mouse;
-/// use iced::widget::canvas;
-/// use iced::{Color, Rectangle, Renderer, Theme};
+/// use ferrishot_iced::mouse;
+/// use ferrishot_iced::widget::canvas;
+/// use ferrishot_iced::{Color, Rectangle, Renderer, Theme};
 ///
 /// // First, we define the data we need for drawing
 /// #[derive(Debug)]
@@ -1989,10 +1989,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::qr_code;
+/// use ferrishot_iced::widget::qr_code;
 ///
 /// struct State {
 ///    data: qr_code::Data,
@@ -2073,10 +2073,10 @@ where
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } pub use iced_widget::Renderer; pub use iced_widget::core::*; }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } pub use ferrishot_iced_widget::Renderer; pub use ferrishot_iced_widget::core::*; }
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
 /// #
-/// use iced::widget::{pane_grid, text};
+/// use ferrishot_iced::widget::{pane_grid, text};
 ///
 /// struct State {
 ///     panes: pane_grid::State<Pane>,

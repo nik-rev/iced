@@ -2,10 +2,10 @@
 //!
 //! # Example
 //! ```no_run
-//! # mod iced { pub mod widget { pub use iced_widget::*; } }
+//! # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 //! # pub type State = ();
 //! # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-//! use iced::widget::container;
+//! use ferrishot_iced::widget::container;
 //!
 //! enum Message {
 //!     // ...
@@ -40,10 +40,10 @@ use crate::runtime::task::{self, Task};
 ///
 /// # Example
 /// ```no_run
-/// # mod iced { pub mod widget { pub use iced_widget::*; } }
+/// # mod iced { pub mod widget { pub use ferrishot_iced_widget::*; } }
 /// # pub type State = ();
 /// # pub type Element<'a, Message> = iced_widget::core::Element<'a, Message, iced_widget::Theme, iced_widget::Renderer>;
-/// use iced::widget::container;
+/// use ferrishot_iced::widget::container;
 ///
 /// enum Message {
 ///     // ...

@@ -1,5 +1,5 @@
 [package]
-name = "iced_test"
+name = "ferrishot_iced_test"
 version.workspace = true
 authors.workspace = true
 edition.workspace = true
@@ -14,10 +14,10 @@ rust-version.workspace = true
 workspace = true
 
 [dependencies]
-iced_runtime.workspace = true
+ferrishot_iced_runtime.workspace = true
 
-iced_renderer.workspace = true
-iced_renderer.features = ["fira-sans"]
+ferrishot_iced_renderer.workspace = true
+ferrishot_iced_renderer.features = ["fira-sans"]
 
 png.workspace = true
 sha2.workspace = true

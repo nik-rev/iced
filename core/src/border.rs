@@ -17,7 +17,7 @@ pub struct Border {
 /// Creates a new [`Border`] with the given [`Radius`].
 ///
 /// ```
-/// # use iced_core::border::{self, Border};
+/// # use ferrishot_iced_core::border::{self, Border};
 /// #
 /// assert_eq!(border::rounded(10), Border::default().rounded(10));
 /// ```
@@ -28,8 +28,8 @@ pub fn rounded(radius: impl Into<Radius>) -> Border {
 /// Creates a new [`Border`] with the given [`Color`].
 ///
 /// ```
-/// # use iced_core::border::{self, Border};
-/// # use iced_core::Color;
+/// # use ferrishot_iced_core::border::{self, Border};
+/// # use ferrishot_iced_core::Color;
 /// #
 /// assert_eq!(border::color(Color::BLACK), Border::default().color(Color::BLACK));
 /// ```
@@ -40,8 +40,8 @@ pub fn color(color: impl Into<Color>) -> Border {
 /// Creates a new [`Border`] with the given `width`.
 ///
 /// ```
-/// # use iced_core::border::{self, Border};
-/// # use iced_core::Color;
+/// # use ferrishot_iced_core::border::{self, Border};
+/// # use ferrishot_iced_core::Color;
 /// #
 /// assert_eq!(border::width(10), Border::default().width(10));
 /// ```

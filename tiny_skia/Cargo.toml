@@ -1,5 +1,5 @@
 [package]
-name = "iced_tiny_skia"
+name = "ferrishot_iced_tiny_skia"
 description = "A software renderer for iced on top of tiny-skia"
 version.workspace = true
 edition.workspace = true
@@ -14,13 +14,13 @@ keywords.workspace = true
 workspace = true
 
 [features]
-image = ["iced_graphics/image"]
-svg = ["iced_graphics/svg", "resvg"]
-geometry = ["iced_graphics/geometry"]
+image = ["ferrishot_iced_graphics/image"]
+svg = ["ferrishot_iced_graphics/svg", "resvg"]
+geometry = ["ferrishot_iced_graphics/geometry"]
 
 [dependencies]
-iced_debug.workspace = true
-iced_graphics.workspace = true
+ferrishot_iced_debug.workspace = true
+ferrishot_iced_graphics.workspace = true
 
 bytemuck.workspace = true
 cosmic-text.workspace = true

@@ -370,15 +370,15 @@ where
 }
 
 #[cfg(feature = "wgpu")]
-impl<A, B> iced_wgpu::primitive::Renderer for Renderer<A, B>
+impl<A, B> ferrishot_iced_wgpu::primitive::Renderer for Renderer<A, B>
 where
-    A: iced_wgpu::primitive::Renderer,
+    A: ferrishot_iced_wgpu::primitive::Renderer,
     B: core::Renderer,
 {
     fn draw_primitive(
         &mut self,
         bounds: Rectangle,
-        primitive: impl iced_wgpu::Primitive,
+        primitive: impl ferrishot_iced_wgpu::Primitive,
     ) {
         match self {
             Self::Primary(renderer) => {

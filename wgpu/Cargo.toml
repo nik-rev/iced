@@ -1,5 +1,5 @@
 [package]
-name = "iced_wgpu"
+name = "ferrishot_iced_wgpu"
 description = "A renderer for iced on top of wgpu"
 version.workspace = true
 edition.workspace = true
@@ -18,16 +18,16 @@ rustdoc-args = ["--cfg", "docsrs"]
 all-features = true
 
 [features]
-geometry = ["iced_graphics/geometry", "lyon"]
-image = ["iced_graphics/image"]
-svg = ["iced_graphics/svg", "resvg/text"]
-web-colors = ["iced_graphics/web-colors"]
+geometry = ["ferrishot_iced_graphics/geometry", "lyon"]
+image = ["ferrishot_iced_graphics/image"]
+svg = ["ferrishot_iced_graphics/svg", "resvg/text"]
+web-colors = ["ferrishot_iced_graphics/web-colors"]
 webgl = ["wgpu/webgl"]
 strict-assertions = []
 
 [dependencies]
-iced_debug.workspace = true
-iced_graphics.workspace = true
+ferrishot_iced_debug.workspace = true
+ferrishot_iced_graphics.workspace = true
 
 bitflags.workspace = true
 bytemuck.workspace = true

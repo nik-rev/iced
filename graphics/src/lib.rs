@@ -38,5 +38,5 @@ pub use settings::Settings;
 pub use text::Text;
 pub use viewport::Viewport;
 
-pub use iced_core as core;
-pub use iced_futures as futures;
+pub use ferrishot_iced_core as core;
+pub use ferrishot_iced_futures as futures;

@@ -24,6 +24,6 @@ pub use crate::core::svg;
 pub use crate::core::text::{self, Text};
 pub use crate::renderer::graphics;
 
-pub use iced_debug as debug;
+pub use ferrishot_iced_debug as debug;
 
 pub use widget::Widget;

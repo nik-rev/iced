@@ -1,5 +1,5 @@
 [package]
-name = "iced_renderer"
+name = "ferrishot_iced_renderer"
 description = "The official renderer for iced"
 version.workspace = true
 edition.workspace = true
@@ -14,24 +14,24 @@ keywords.workspace = true
 workspace = true
 
 [features]
-wgpu = ["iced_wgpu"]
-tiny-skia = ["iced_tiny_skia"]
-image = ["iced_tiny_skia?/image", "iced_wgpu?/image"]
-svg = ["iced_tiny_skia?/svg", "iced_wgpu?/svg"]
-geometry = ["iced_graphics/geometry", "iced_tiny_skia?/geometry", "iced_wgpu?/geometry"]
-web-colors = ["iced_wgpu?/web-colors"]
-webgl = ["iced_wgpu?/webgl"]
-fira-sans = ["iced_graphics/fira-sans"]
-strict-assertions = ["iced_wgpu?/strict-assertions"]
+wgpu = ["ferrishot_iced_wgpu"]
+tiny-skia = ["ferrishot_iced_tiny_skia"]
+image = ["ferrishot_iced_tiny_skia?/image", "ferrishot_iced_wgpu?/image"]
+svg = ["ferrishot_iced_tiny_skia?/svg", "ferrishot_iced_wgpu?/svg"]
+geometry = ["ferrishot_iced_graphics/geometry", "ferrishot_iced_tiny_skia?/geometry", "ferrishot_iced_wgpu?/geometry"]
+web-colors = ["ferrishot_iced_wgpu?/web-colors"]
+webgl = ["ferrishot_iced_wgpu?/webgl"]
+fira-sans = ["ferrishot_iced_graphics/fira-sans"]
+strict-assertions = ["ferrishot_iced_wgpu?/strict-assertions"]
 
 [dependencies]
-iced_graphics.workspace = true
+ferrishot_iced_graphics.workspace = true
 
-iced_tiny_skia.workspace = true
-iced_tiny_skia.optional = true
+ferrishot_iced_tiny_skia.workspace = true
+ferrishot_iced_tiny_skia.optional = true
 
-iced_wgpu.workspace = true
-iced_wgpu.optional = true
+ferrishot_iced_wgpu.workspace = true
+ferrishot_iced_wgpu.optional = true
 
 log.workspace = true
 thiserror.workspace = true

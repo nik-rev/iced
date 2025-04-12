@@ -1,5 +1,5 @@
 [package]
-name = "iced_graphics"
+name = "ferrishot_iced_graphics"
 description = "A bunch of backend-agnostic types that can be leveraged to build a renderer for iced"
 version.workspace = true
 edition.workspace = true
@@ -25,8 +25,8 @@ web-colors = []
 fira-sans = []
 
 [dependencies]
-iced_core.workspace = true
-iced_futures.workspace = true
+ferrishot_iced_core.workspace = true
+ferrishot_iced_futures.workspace = true
 
 bitflags.workspace = true
 bytemuck.workspace = true

@@ -90,9 +90,9 @@ pub mod selector;
 
 pub use selector::Selector;
 
-use iced_renderer as renderer;
-use iced_runtime as runtime;
-use iced_runtime::core;
+use ferrishot_iced_renderer as renderer;
+use ferrishot_iced_runtime as runtime;
+use ferrishot_iced_runtime::core;
 
 use crate::core::clipboard;
 use crate::core::event;
@@ -190,11 +190,13 @@ where
         let mut renderer = {
             let backend = env::var("ICED_TEST_BACKEND").ok();
 
-            iced_runtime::futures::futures::executor::block_on(Renderer::new(
-                default_font,
-                settings.default_text_size,
-                backend.as_deref(),
-            ))
+            ferrishot_iced_runtime::futures::futures::executor::block_on(
+                Renderer::new(
+                    default_font,
+                    settings.default_text_size,
+                    backend.as_deref(),
+                ),
+            )
             .expect("Create new headless renderer")
         };
 

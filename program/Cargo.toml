@@ -1,5 +1,5 @@
 [package]
-name = "iced_program"
+name = "ferrishot_iced_program"
 version.workspace = true
 authors.workspace = true
 edition.workspace = true
@@ -11,8 +11,8 @@ keywords.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-iced_graphics.workspace = true
-iced_runtime.workspace = true
+ferrishot_iced_graphics.workspace = true
+ferrishot_iced_runtime.workspace = true
 
 [lints]
 workspace = true

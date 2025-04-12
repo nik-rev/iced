@@ -1,5 +1,5 @@
 //! A syntax highlighter for iced.
-use iced_core as core;
+use ferrishot_iced_core as core;
 
 use crate::core::Color;
 use crate::core::font::{self, Font};

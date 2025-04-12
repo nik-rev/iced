@@ -1,10 +1,10 @@
 #![allow(missing_docs)]
-use iced_debug as debug;
-use iced_program as program;
-use iced_widget as widget;
-use iced_widget::core;
-use iced_widget::runtime;
-use iced_widget::runtime::futures;
+use ferrishot_iced_debug as debug;
+use ferrishot_iced_program as program;
+use ferrishot_iced_widget as widget;
+use ferrishot_iced_widget::core;
+use ferrishot_iced_widget::runtime;
+use ferrishot_iced_widget::runtime::futures;
 
 mod executor;
 

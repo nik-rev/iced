@@ -3,10 +3,10 @@
     html_logo_url = "https://raw.githubusercontent.com/iced-rs/iced/9ab6923e943f784985e9ef9ca28b10278297225d/docs/logo.svg"
 )]
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
-pub use iced_renderer as renderer;
-pub use iced_renderer::graphics;
-pub use iced_runtime as runtime;
-pub use iced_runtime::core;
+pub use ferrishot_iced_renderer as renderer;
+pub use ferrishot_iced_renderer::graphics;
+pub use ferrishot_iced_runtime as runtime;
+pub use ferrishot_iced_runtime::core;
 
 mod action;
 mod column;

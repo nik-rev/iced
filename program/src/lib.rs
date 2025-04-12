@@ -1,8 +1,8 @@
 //! The definition of an iced program.
-pub use iced_graphics as graphics;
-pub use iced_runtime as runtime;
-pub use iced_runtime::core;
-pub use iced_runtime::futures;
+pub use ferrishot_iced_graphics as graphics;
+pub use ferrishot_iced_runtime as runtime;
+pub use ferrishot_iced_runtime::core;
+pub use ferrishot_iced_runtime::futures;
 
 use crate::core::Element;
 use crate::core::text;

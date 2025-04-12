@@ -1,4 +1,4 @@
-pub use iced_core as core;
+pub use ferrishot_iced_core as core;
 pub use semver::Version;
 
 pub mod client;

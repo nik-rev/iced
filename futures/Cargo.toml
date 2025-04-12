@@ -1,5 +1,5 @@
 [package]
-name = "iced_futures"
+name = "ferrishot_iced_futures"
 description = "Commands, subscriptions, and future executors for iced"
 version.workspace = true
 edition.workspace = true
@@ -21,7 +21,7 @@ all-features = true
 thread-pool = ["futures/thread-pool"]
 
 [dependencies]
-iced_core.workspace = true
+ferrishot_iced_core.workspace = true
 
 futures.workspace = true
 futures.features = ["std", "async-await"]

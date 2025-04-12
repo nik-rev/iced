@@ -18,9 +18,9 @@ pub mod task;
 pub mod user_interface;
 pub mod window;
 
-pub use iced_core as core;
-pub use iced_debug as debug;
-pub use iced_futures as futures;
+pub use ferrishot_iced_core as core;
+pub use ferrishot_iced_debug as debug;
+pub use ferrishot_iced_futures as futures;
 
 pub use task::Task;
 pub use user_interface::UserInterface;

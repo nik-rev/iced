@@ -1,5 +1,6 @@
 [package]
 name = "ferrishot_iced_program"
+description = "iced program"
 version.workspace = true
 authors.workspace = true
 edition.workspace = true

@@ -1,5 +1,6 @@
 [package]
 name = "ferrishot_iced_devtools"
+description = "devtools"
 version.workspace = true
 authors.workspace = true
 edition.workspace = true
